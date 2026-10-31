@@ -1,0 +1,9 @@
+{
+  "rag_policy":    ["how many days do I have to return an item"],
+  "rag_product":   ["does the wave sound headphone work with my laptop"],
+  "tool_search":   ["find wireless headphones under ten thousand rupees"],
+  "tool_order":    ["where is order B C one zero two four", "four seven two one"],
+  "tool_return":   ["can I return the headphones from order B C one zero two five",
+                    "they are unused", "yes I still have the box", "three three zero eight"],
+  "off_topic":     ["what is the weather today"]
+}

@@ -1,0 +1,305 @@
+[
+ {
+  "say": "find wireless headphones under ten thousand rupees",
+  "tool": "search_products",
+  "args": {
+   "query": "headphones",
+   "max_price": 10000
+  }
+ },
+ {
+  "say": "do you have any power banks in stock",
+  "tool": "search_products",
+  "args": {
+   "query": "power bank"
+  }
+ },
+ {
+  "say": "show me the cheapest mouse",
+  "tool": "search_products",
+  "args": {
+   "query": "mouse"
+  }
+ },
+ {
+  "say": "I'm looking for a webcam under eight thousand rupees",
+  "tool": "search_products",
+  "args": {
+   "query": "webcam",
+   "max_price": 8000
+  }
+ },
+ {
+  "say": "what keyboards do you sell",
+  "tool": "search_products",
+  "args": {
+   "query": "keyboard"
+  }
+ },
+ {
+  "say": "how much is the smartwatch",
+  "tool": "search_products",
+  "args": {
+   "query": "watch"
+  }
+ },
+ {
+  "say": "are there any speakers below seven thousand rupees",
+  "tool": "search_products",
+  "args": {
+   "query": "speaker",
+   "max_price": 7000
+  }
+ },
+ {
+  "say": "find me a USB cable",
+  "tool": "search_products",
+  "args": {
+   "query": "cable"
+  }
+ },
+ {
+  "say": "I need a portable SSD under twenty thousand rupees",
+  "tool": "search_products",
+  "args": {
+   "query": "ssd",
+   "max_price": 20000
+  }
+ },
+ {
+  "say": "is the LinkHub available",
+  "tool": "search_products",
+  "args": {
+   "query": "linkhub"
+  }
+ },
+ {
+  "say": "where is my order B C one zero two four",
+  "tool": "lookup_order",
+  "args": {
+   "order_id": "BC1024"
+  }
+ },
+ {
+  "say": "what's the status of order bc 1025",
+  "tool": "lookup_order",
+  "args": {
+   "order_id": "BC1025"
+  }
+ },
+ {
+  "say": "track order B C one zero two six",
+  "tool": "lookup_order",
+  "args": {
+   "order_id": "BC1026"
+  }
+ },
+ {
+  "say": "has order BC1027 shipped yet",
+  "tool": "lookup_order",
+  "args": {
+   "order_id": "BC1027"
+  }
+ },
+ {
+  "say": "when will order BC1029 arrive",
+  "tool": "lookup_order",
+  "args": {
+   "order_id": "BC1029"
+  }
+ },
+ {
+  "say": "I want to know about my order",
+  "tool": "lookup_order",
+  "args": {}
+ },
+ {
+  "say": "can you check my delivery for B C one zero three zero",
+  "tool": "lookup_order",
+  "args": {
+   "order_id": "BC1030"
+  }
+ },
+ {
+  "say": "what's happening with order BC1024",
+  "tool": "lookup_order",
+  "args": {
+   "order_id": "BC1024"
+  }
+ },
+ {
+  "say": "can I return the headphones from order BC1025",
+  "tool": "check_return_eligibility",
+  "args": {
+   "order_id": "BC1025",
+   "item": "headphones"
+  }
+ },
+ {
+  "say": "I want to send back the keyboard from order B C one zero two six",
+  "tool": "check_return_eligibility",
+  "args": {
+   "order_id": "BC1026",
+   "item": "keyboard"
+  }
+ },
+ {
+  "say": "is the lamp from order BC1028 returnable",
+  "tool": "check_return_eligibility",
+  "args": {
+   "order_id": "BC1028",
+   "item": "lamp"
+  }
+ },
+ {
+  "say": "can I return the gift card on order BC1028",
+  "tool": "check_return_eligibility",
+  "args": {
+   "order_id": "BC1028",
+   "item": "gift card"
+  }
+ },
+ {
+  "say": "am I eligible to return the watch from BC1030",
+  "tool": "check_return_eligibility",
+  "args": {
+   "order_id": "BC1030",
+   "item": "watch"
+  }
+ },
+ {
+  "say": "I got the headphones ten days ago can I return them",
+  "tool": "check_return_eligibility",
+  "args": {
+   "item": "headphones"
+  }
+ },
+ {
+  "say": "can I return the cable from order BC1025, it is unused and I have the box",
+  "tool": "check_return_eligibility",
+  "args": {
+   "order_id": "BC1025",
+   "item": "cable",
+   "condition": "unused",
+   "has_original_packaging": true
+  }
+ },
+ {
+  "say": "the lamp from order BC1028 arrived damaged, can I return it",
+  "tool": "check_return_eligibility",
+  "args": {
+   "order_id": "BC1028",
+   "item": "lamp",
+   "condition": "damaged"
+  }
+ },
+ {
+  "say": "what is your return policy",
+  "tool": "none",
+  "args": {}
+ },
+ {
+  "say": "does the H200 headphone work with my laptop",
+  "tool": "none",
+  "args": {}
+ },
+ {
+  "say": "how long does express shipping take",
+  "tool": "none",
+  "args": {}
+ },
+ {
+  "say": "how do I cancel an order",
+  "tool": "none",
+  "args": {}
+ },
+ {
+  "say": "which payment methods do you accept",
+  "tool": "none",
+  "args": {}
+ },
+ {
+  "say": "my payment failed what should I do",
+  "tool": "none",
+  "args": {}
+ },
+ {
+  "say": "hello",
+  "tool": "none",
+  "args": {}
+ },
+ {
+  "say": "thank you so much",
+  "tool": "none",
+  "args": {}
+ },
+ {
+  "say": "what is the battery life of the PulseFit watch",
+  "tool": "none",
+  "args": {}
+ },
+ {
+  "say": "how do I pair the PocketBeat speaker",
+  "tool": "none",
+  "args": {}
+ },
+ {
+  "say": "my name is Ayesha",
+  "tool": "customer_profile",
+  "args": {
+   "action": "update",
+   "name": "Ayesha"
+  }
+ },
+ {
+  "say": "my name is Bilal Rauf and I prefer black headphones",
+  "tool": "customer_profile",
+  "args": {
+   "action": "update",
+   "name": "Bilal Rauf",
+   "preference": "black headphones"
+  }
+ },
+ {
+  "say": "call me Sana",
+  "tool": "customer_profile",
+  "args": {
+   "action": "update",
+   "name": "Sana"
+  }
+ },
+ {
+  "say": "please remember that I prefer wireless products",
+  "tool": "customer_profile",
+  "args": {
+   "action": "update",
+   "preference": "wireless products"
+  }
+ },
+ {
+  "say": "what do you remember about me",
+  "tool": "customer_profile",
+  "args": {
+   "action": "get"
+  }
+ },
+ {
+  "say": "forget my details please",
+  "tool": "customer_profile",
+  "args": {
+   "action": "forget"
+  }
+ },
+ {
+  "say": "do you remember me",
+  "tool": "customer_profile",
+  "args": {
+   "action": "get"
+  }
+ },
+ {
+  "say": "I'm looking for a gift for my brother",
+  "tool": "none",
+  "args": {}
+ }
+]

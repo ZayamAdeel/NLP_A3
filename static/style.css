@@ -1,0 +1,236 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #f4f5f7;
+  color: #1c1e21;
+}
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0 0 24px rgba(0,0,0,0.06);
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.brand { display: flex; align-items: center; gap: 8px; font-weight: 600; }
+.brand-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: linear-gradient(135deg, #2d6cdf, #63e6be);
+  display: inline-block;
+}
+
+.header-right { display: flex; align-items: center; gap: 10px; }
+
+.stage-badge {
+  font-size: 11px;
+  color: #555;
+  background: #f0f2f5;
+  border-radius: 12px;
+  padding: 4px 10px;
+  text-transform: lowercase;
+}
+
+.new-chat-btn {
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.new-chat-btn:hover { background: #f4f5f7; }
+
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.system-note {
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  margin: 8px 0;
+}
+
+.msg {
+  max-width: 78%;
+  padding: 10px 14px;
+  border-radius: 14px;
+  line-height: 1.4;
+  font-size: 14.5px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.msg.user {
+  align-self: flex-end;
+  background: #2d6cdf;
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.msg.assistant {
+  align-self: flex-start;
+  background: #f0f2f5;
+  color: #1c1e21;
+  border-bottom-left-radius: 4px;
+}
+
+.msg.blocked {
+  align-self: flex-start;
+  background: #fff4e5;
+  color: #7a4a00;
+  border: 1px solid #ffe1b3;
+}
+
+.msg.error {
+  align-self: center;
+  background: #fdecea;
+  color: #a30000;
+  border: 1px solid #f5c6c6;
+  font-size: 13px;
+}
+
+.meta {
+  font-size: 10.5px;
+  color: #999;
+  margin-top: 4px;
+  align-self: flex-start;
+}
+
+.composer {
+  display: flex;
+  gap: 8px;
+  padding: 14px 18px;
+  border-top: 1px solid #eaeaea;
+}
+
+.composer input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+}
+.composer input:focus { border-color: #2d6cdf; }
+
+.composer button {
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: none;
+  background: #2d6cdf;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.composer button:disabled { background: #a9c0e8; cursor: not-allowed; }
+
+.conn-status {
+  text-align: center;
+  font-size: 11px;
+  color: #bbb;
+  padding-bottom: 8px;
+}
+
+/* ---- citations (Assignment 2) ---- */
+.msg-extra {
+  align-self: flex-start;
+  max-width: 78%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: -4px;
+}
+
+.msg-extra .meta { margin-top: 0; }
+
+.sources { display: flex; flex-direction: column; gap: 6px; }
+.sources-label { font-size: 12px; color: #666; }
+.src-row { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.src-chip {
+  font: inherit;
+  font-size: 12px;
+  text-align: left;
+  color: #1f4fae;
+  background: #f3f6fd;
+  border: 1px solid #c9d7f2;
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.src-chip:hover { background: #e8eefb; }
+.src-chip[aria-expanded="true"] { background: #dfe8fa; border-color: #2d6cdf; }
+.src-chip:focus-visible, .new-chat-btn:focus-visible, .composer button:focus-visible {
+  outline: 2px solid #2d6cdf;
+  outline-offset: 2px;
+}
+
+.src-detail {
+  background: #f7f9fe;
+  border: 1px solid #dde6f7;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 12.5px;
+  line-height: 1.45;
+}
+.src-path { color: #666; margin-bottom: 4px; word-break: break-all; }
+.src-snippet { color: #1c1e21; white-space: pre-wrap; }
+
+.src-note {
+  font-size: 12px;
+  color: #7a4a00;
+  background: #fff4e5;
+  border: 1px solid #ffe1b3;
+  border-radius: 8px;
+  padding: 5px 9px;
+}
+
+/* ---- voice + tools (Assignment 3) ---- */
+.composer .mic-btn {
+  background: #fff;
+  color: #1f4fae;
+  border: 1px solid #c9d7f2;
+}
+.composer .mic-btn.mic-on { background: #fdecea; color: #a30000; border-color: #f5c6c6; }
+.live {
+  margin: 0 18px;
+  padding: 6px 12px;
+  align-self: flex-end;
+  font-size: 13.5px;
+  color: #555;
+  font-style: italic;
+  border-radius: 10px;
+  background: #f4f5f7;
+}
+.status-row { display: flex; justify-content: space-between; padding: 0 18px 8px; }
+.status-row .conn-status { padding: 0; }
+.tool-card {
+  font-size: 12.5px;
+  line-height: 1.45;
+  background: #f4faf6;
+  border: 1px solid #cfe6d6;
+  border-radius: 8px;
+  padding: 7px 10px;
+}
+.tool-head { color: #2d6a45; font-weight: 600; margin-bottom: 3px; }
+.tool-body { color: #1c1e21; word-break: break-word; }
+.voice-meta { align-self: flex-start; margin-top: -2px; }

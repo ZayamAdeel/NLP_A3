@@ -1,0 +1,255 @@
+{
+  "document_count": 50,
+  "documents": [
+    {
+      "path": "products/product_001_wavesound_headphones.md",
+      "title": "WaveSound H200 Wireless Headphones",
+      "characters": 476
+    },
+    {
+      "path": "products/product_002_pocketbeat_speaker.md",
+      "title": "PocketBeat Mini Speaker",
+      "characters": 438
+    },
+    {
+      "path": "products/product_003_flexcharge_cable.md",
+      "title": "FlexCharge USB-C Cable",
+      "characters": 429
+    },
+    {
+      "path": "products/product_004_glide_mouse.md",
+      "title": "Glide Wireless Mouse",
+      "characters": 412
+    },
+    {
+      "path": "products/product_005_keycraft_keyboard.md",
+      "title": "KeyCraft K87 Mechanical Keyboard",
+      "characters": 431
+    },
+    {
+      "path": "products/product_006_liftmate_stand.md",
+      "title": "LiftMate Adjustable Laptop Stand",
+      "characters": 423
+    },
+    {
+      "path": "products/product_007_clearview_webcam.md",
+      "title": "ClearView C920 Webcam",
+      "characters": 409
+    },
+    {
+      "path": "products/product_008_voltgo_powerbank.md",
+      "title": "VoltGo 10000 Power Bank",
+      "characters": 440
+    },
+    {
+      "path": "products/product_009_snapguard_case.md",
+      "title": "SnapGuard Protective Phone Case",
+      "characters": 452
+    },
+    {
+      "path": "products/product_010_storefast_ssd.md",
+      "title": "StoreFast Portable SSD",
+      "characters": 419
+    },
+    {
+      "path": "products/product_011_glowdesk_lamp.md",
+      "title": "GlowDesk LED Lamp",
+      "characters": 417
+    },
+    {
+      "path": "products/product_012_pulsefit_watch.md",
+      "title": "PulseFit S3 Smartwatch",
+      "characters": 425
+    },
+    {
+      "path": "products/product_013_rumble_headset.md",
+      "title": "Rumble H5 Gaming Headset",
+      "characters": 432
+    },
+    {
+      "path": "products/product_014_folio_tablet_stand.md",
+      "title": "Folio Adjustable Tablet Stand",
+      "characters": 443
+    },
+    {
+      "path": "products/product_015_linkhub.md",
+      "title": "LinkHub 7-in-1 USB-C Hub",
+      "characters": 412
+    },
+    {
+      "path": "product_faqs/faq_016_headphone_compatibility.md",
+      "title": "WaveSound H200 Compatibility FAQ",
+      "characters": 451
+    },
+    {
+      "path": "product_faqs/faq_017_speaker_pairing.md",
+      "title": "PocketBeat Speaker Pairing FAQ",
+      "characters": 444
+    },
+    {
+      "path": "product_faqs/faq_018_cable_charging.md",
+      "title": "FlexCharge Charging-Speed FAQ",
+      "characters": 427
+    },
+    {
+      "path": "product_faqs/faq_019_mouse_troubleshooting.md",
+      "title": "Glide Mouse Troubleshooting FAQ",
+      "characters": 410
+    },
+    {
+      "path": "product_faqs/faq_020_keyboard_os.md",
+      "title": "KeyCraft K87 Operating-System FAQ",
+      "characters": 410
+    },
+    {
+      "path": "product_faqs/faq_021_webcam_setup.md",
+      "title": "ClearView Webcam Setup FAQ",
+      "characters": 436
+    },
+    {
+      "path": "product_faqs/faq_022_powerbank_safety.md",
+      "title": "VoltGo Power Bank Safety FAQ",
+      "characters": 414
+    },
+    {
+      "path": "product_faqs/faq_023_ssd_formatting.md",
+      "title": "StoreFast SSD Formatting FAQ",
+      "characters": 446
+    },
+    {
+      "path": "product_faqs/faq_024_watch_pairing.md",
+      "title": "PulseFit S3 Pairing FAQ",
+      "characters": 443
+    },
+    {
+      "path": "product_faqs/faq_025_hub_hdmi.md",
+      "title": "LinkHub HDMI Troubleshooting FAQ",
+      "characters": 449
+    },
+    {
+      "path": "shipping/shipping_026_standard.md",
+      "title": "Standard Shipping Policy",
+      "characters": 468
+    },
+    {
+      "path": "shipping/shipping_027_express.md",
+      "title": "Express Shipping Policy",
+      "characters": 470
+    },
+    {
+      "path": "shipping/shipping_028_region_estimates.md",
+      "title": "Regional Delivery Estimates",
+      "characters": 436
+    },
+    {
+      "path": "shipping/shipping_029_tracking_link.md",
+      "title": "Finding a Tracking Link",
+      "characters": 447
+    },
+    {
+      "path": "shipping/shipping_030_delayed.md",
+      "title": "Delayed Shipment Procedure",
+      "characters": 456
+    },
+    {
+      "path": "shipping/shipping_031_wrong_address.md",
+      "title": "Incorrect Delivery Address Procedure",
+      "characters": 474
+    },
+    {
+      "path": "shipping/shipping_032_lost_package.md",
+      "title": "Potentially Lost Package Procedure",
+      "characters": 479
+    },
+    {
+      "path": "returns/returns_033_eligibility.md",
+      "title": "Return Eligibility Policy",
+      "characters": 419
+    },
+    {
+      "path": "returns/returns_034_packaging.md",
+      "title": "Return Packaging Procedure",
+      "characters": 466
+    },
+    {
+      "path": "returns/returns_035_refund_timeline.md",
+      "title": "Refund Processing Timeline",
+      "characters": 418
+    },
+    {
+      "path": "returns/returns_036_exchange.md",
+      "title": "Size or Color Exchange Policy",
+      "characters": 460
+    },
+    {
+      "path": "returns/returns_037_damaged_item.md",
+      "title": "Damaged Item Procedure",
+      "characters": 432
+    },
+    {
+      "path": "returns/returns_038_nonreturnable.md",
+      "title": "Non-Returnable Items Policy",
+      "characters": 418
+    },
+    {
+      "path": "returns/returns_039_return_shipping.md",
+      "title": "Who Pays Return Shipping FAQ",
+      "characters": 437
+    },
+    {
+      "path": "payments/payments_040_methods.md",
+      "title": "Accepted Payment Methods",
+      "characters": 461
+    },
+    {
+      "path": "payments/payments_041_failed.md",
+      "title": "Failed Payment Troubleshooting",
+      "characters": 497
+    },
+    {
+      "path": "payments/payments_042_giftcard.md",
+      "title": "Gift Card Redemption FAQ",
+      "characters": 408
+    },
+    {
+      "path": "payments/payments_043_discount.md",
+      "title": "Discount Code FAQ",
+      "characters": 436
+    },
+    {
+      "path": "payments/payments_044_duplicate_charge.md",
+      "title": "Possible Duplicate Charge FAQ",
+      "characters": 470
+    },
+    {
+      "path": "orders/orders_045_confirmation.md",
+      "title": "Order Confirmation FAQ",
+      "characters": 447
+    },
+    {
+      "path": "orders/orders_046_cancellation.md",
+      "title": "Order Cancellation Policy",
+      "characters": 457
+    },
+    {
+      "path": "orders/orders_047_edit_order.md",
+      "title": "Editing an Existing Order",
+      "characters": 439
+    },
+    {
+      "path": "orders/orders_048_account_details.md",
+      "title": "Updating Account Details",
+      "characters": 429
+    },
+    {
+      "path": "orders/orders_049_missing_email.md",
+      "title": "Missing Confirmation Email Troubleshooting",
+      "characters": 455
+    },
+    {
+      "path": "orders/orders_050_invoice.md",
+      "title": "Invoice and Receipt Requests",
+      "characters": 466
+    }
+  ]
+}

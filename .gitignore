@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.pytest_cache/
+*.egg-info/
+.DS_Store
+
+# built by `python scripts/build_index.py`; depends on the embedding model
+index/
+results/
+
+# generated / downloaded at setup time
+voices/
+data/brightcart.db
+data/voice_samples/

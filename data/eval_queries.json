@@ -1,0 +1,296 @@
+{
+ "_comment": "in_corpus: query -> acceptable source docs. out_of_corpus: unrelated queries. hard_negatives: store-related questions the corpus does NOT answer (retrieval will find topically-near docs; the prompt must handle them).",
+ "in_corpus": [
+  {
+   "q": "Can I connect the WaveSound headphones to my laptop?",
+   "expect": [
+    "product_faqs/faq_016_headphone_compatibility.md",
+    "products/product_001_wavesound_headphones.md"
+   ]
+  },
+  {
+   "q": "How long does the H200 battery last?",
+   "expect": [
+    "products/product_001_wavesound_headphones.md"
+   ]
+  },
+  {
+   "q": "My PocketBeat speaker won't pair, what should I do?",
+   "expect": [
+    "product_faqs/faq_017_speaker_pairing.md"
+   ]
+  },
+  {
+   "q": "Is the PocketBeat speaker waterproof?",
+   "expect": [
+    "products/product_002_pocketbeat_speaker.md"
+   ]
+  },
+  {
+   "q": "How fast can the FlexCharge cable charge my phone?",
+   "expect": [
+    "product_faqs/faq_018_cable_charging.md",
+    "products/product_003_flexcharge_cable.md"
+   ]
+  },
+  {
+   "q": "Can I plug the USB-C cable into an old USB-A port?",
+   "expect": [
+    "products/product_003_flexcharge_cable.md"
+   ]
+  },
+  {
+   "q": "My Glide mouse has stopped moving",
+   "expect": [
+    "product_faqs/faq_019_mouse_troubleshooting.md"
+   ]
+  },
+  {
+   "q": "Does the Glide mouse use Bluetooth?",
+   "expect": [
+    "products/product_004_glide_mouse.md"
+   ]
+  },
+  {
+   "q": "Does the KeyCraft keyboard work on a Mac?",
+   "expect": [
+    "product_faqs/faq_020_keyboard_os.md",
+    "products/product_005_keycraft_keyboard.md"
+   ]
+  },
+  {
+   "q": "Is the KeyCraft K87 wireless?",
+   "expect": [
+    "products/product_005_keycraft_keyboard.md"
+   ]
+  },
+  {
+   "q": "How do I set up the ClearView webcam?",
+   "expect": [
+    "product_faqs/faq_021_webcam_setup.md",
+    "products/product_007_clearview_webcam.md"
+   ]
+  },
+  {
+   "q": "What is the capacity of the VoltGo power bank?",
+   "expect": [
+    "products/product_008_voltgo_powerbank.md"
+   ]
+  },
+  {
+   "q": "Is it safe to use a swollen power bank?",
+   "expect": [
+    "product_faqs/faq_022_powerbank_safety.md"
+   ]
+  },
+  {
+   "q": "My computer asks me to format the StoreFast SSD. Should I?",
+   "expect": [
+    "product_faqs/faq_023_ssd_formatting.md"
+   ]
+  },
+  {
+   "q": "How fast is the portable SSD?",
+   "expect": [
+    "products/product_010_storefast_ssd.md"
+   ]
+  },
+  {
+   "q": "How do I pair the PulseFit watch with my phone?",
+   "expect": [
+    "product_faqs/faq_024_watch_pairing.md"
+   ]
+  },
+  {
+   "q": "Is the PulseFit S3 water resistant?",
+   "expect": [
+    "products/product_012_pulsefit_watch.md"
+   ]
+  },
+  {
+   "q": "Why is HDMI not working on my LinkHub?",
+   "expect": [
+    "product_faqs/faq_025_hub_hdmi.md"
+   ]
+  },
+  {
+   "q": "What ports does the LinkHub have?",
+   "expect": [
+    "products/product_015_linkhub.md"
+   ]
+  },
+  {
+   "q": "How many days does standard delivery take?",
+   "expect": [
+    "shipping/shipping_026_standard.md"
+   ]
+  },
+  {
+   "q": "How fast is express shipping?",
+   "expect": [
+    "shipping/shipping_027_express.md"
+   ]
+  },
+  {
+   "q": "How long will delivery take to a remote area?",
+   "expect": [
+    "shipping/shipping_028_region_estimates.md"
+   ]
+  },
+  {
+   "q": "Where do I find my tracking number?",
+   "expect": [
+    "shipping/shipping_029_tracking_link.md"
+   ]
+  },
+  {
+   "q": "My package is late and the tracking hasn't updated",
+   "expect": [
+    "shipping/shipping_030_delayed.md"
+   ]
+  },
+  {
+   "q": "I entered the wrong delivery address",
+   "expect": [
+    "shipping/shipping_031_wrong_address.md"
+   ]
+  },
+  {
+   "q": "Tracking says delivered but I never got my parcel",
+   "expect": [
+    "shipping/shipping_032_lost_package.md"
+   ]
+  },
+  {
+   "q": "Can I return something I bought three weeks ago?",
+   "expect": [
+    "returns/returns_033_eligibility.md"
+   ]
+  },
+  {
+   "q": "How should I pack an item I'm sending back?",
+   "expect": [
+    "returns/returns_034_packaging.md"
+   ]
+  },
+  {
+   "q": "When will I get my money back after returning an item?",
+   "expect": [
+    "returns/returns_035_refund_timeline.md"
+   ]
+  },
+  {
+   "q": "Can I swap my order for a different colour?",
+   "expect": [
+    "returns/returns_036_exchange.md"
+   ]
+  },
+  {
+   "q": "My item arrived broken",
+   "expect": [
+    "returns/returns_037_damaged_item.md"
+   ]
+  },
+  {
+   "q": "Can I return a gift card?",
+   "expect": [
+    "returns/returns_038_nonreturnable.md",
+    "payments/payments_042_giftcard.md"
+   ]
+  },
+  {
+   "q": "Who pays for return postage?",
+   "expect": [
+    "returns/returns_039_return_shipping.md"
+   ]
+  },
+  {
+   "q": "Which payment methods do you accept?",
+   "expect": [
+    "payments/payments_040_methods.md"
+   ]
+  },
+  {
+   "q": "My payment failed at checkout",
+   "expect": [
+    "payments/payments_041_failed.md"
+   ]
+  },
+  {
+   "q": "How do I use a gift card code?",
+   "expect": [
+    "payments/payments_042_giftcard.md"
+   ]
+  },
+  {
+   "q": "My discount code isn't working",
+   "expect": [
+    "payments/payments_043_discount.md"
+   ]
+  },
+  {
+   "q": "Do you price match other stores?",
+   "expect": [
+    "payments/payments_043_discount.md"
+   ]
+  },
+  {
+   "q": "I think I was charged twice",
+   "expect": [
+    "payments/payments_044_duplicate_charge.md"
+   ]
+  },
+  {
+   "q": "I didn't get an order confirmation email",
+   "expect": [
+    "orders/orders_045_confirmation.md",
+    "orders/orders_049_missing_email.md"
+   ]
+  },
+  {
+   "q": "Can I cancel my order?",
+   "expect": [
+    "orders/orders_046_cancellation.md"
+   ]
+  },
+  {
+   "q": "I need to change the size on an order I just placed",
+   "expect": [
+    "orders/orders_047_edit_order.md"
+   ]
+  },
+  {
+   "q": "How do I update my account email address?",
+   "expect": [
+    "orders/orders_048_account_details.md"
+   ]
+  },
+  {
+   "q": "Can I get an invoice for my purchase?",
+   "expect": [
+    "orders/orders_050_invoice.md"
+   ]
+  }
+ ],
+ "out_of_corpus": [
+  "Do you sell dishwashers?",
+  "How do I fix a leaking kitchen tap?",
+  "What's a good pasta recipe?",
+  "Tell me about the history of Rome",
+  "Do you sell iPhones?",
+  "Can you recommend a gaming laptop?",
+  "What are your store opening hours?",
+  "Do you have a physical shop in London?",
+  "How do I train my dog to sit?",
+  "What is the meaning of life?",
+  "How tall is Mount Everest?",
+  "Can you help me write a cover letter?",
+  "When should I plant tomatoes?"
+ ],
+ "hard_negatives": [
+  "Do you offer student discounts?",
+  "Do you have a loyalty rewards program?",
+  "Can I pay with PayPal?",
+  "What is your customer support phone number?"
+ ]
+}

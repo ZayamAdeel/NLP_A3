@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrightCart Support Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span class="brand-name">BrightCart Support</span>
+      </div>
+      <div class="header-right">
+        <span id="stage-badge" class="stage-badge">stage: greeting</span>
+        <button id="new-chat-btn" class="new-chat-btn">New chat</button>
+      </div>
+    </header>
+
+    <main id="chat-window" class="chat-window">
+      <div class="system-note">
+        Connecting to Ava, your order support assistant…
+      </div>
+    </main>
+
+    <div id="live" class="live" aria-live="polite" hidden></div>
+    <footer class="composer">
+      <input id="msg-input" type="text" placeholder="Ask about an order, a product, or our return policy…" autocomplete="off" />
+      <button id="mic-btn" type="button" class="mic-btn" aria-pressed="false">Speak</button>
+      <button id="send-btn">Send</button>
+    </footer>
+    <div class="status-row"><span id="conn-status" class="conn-status">connecting…</span><span id="voice-status" class="conn-status"></span></div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="voice.js"></script>
+</body>
+</html>
