@@ -1,4 +1,4 @@
-# BrightCart Support Assistant (Assignments 1 + 2 + 3)
+# BrightCart Support Assistant (Assignments 3)
 
 A fully local, CPU-only e-commerce support assistant ("Ava"). It runs entirely on your machine:
 a quantized LLM served by Ollama, retrieval over a 50-document knowledge base, four LLM-callable
@@ -281,26 +281,6 @@ python benchmark/benchmark_latency.py                                           
 search, order lookup, 4-turn return check, off-topic) with Piper and streams them in real time, or use your own
 recordings with `--wav-dir`. *Spoken test audio is clean synthetic speech, so ASR accuracy is optimistic; use live
 microphone runs too.*
-
-### Results *(paste)* — hardware: CPU / cores / RAM / OS: ______
-| turn type (n) | asr_ms | pre_generation_ms | llm_ttft_ms | tts_first_audio_ms | speech-end → first audio | client-side |
-|---|---|---|---|---|---|---|
-| rag | | | | | | |
-| tool-question (no LLM) | | | | | | |
-| tool-answer | | | | | | |
-| 2 concurrent users | | | | | | |
-
-Retrieval alone (Assignment 2 table): *(paste from `benchmark_retrieval.py`)*.
-
-### What I expect (estimates, not measurements)
-End of speech needs a short silence to be detected, so even an instant pipeline spends a few hundred ms there. The LLM
-must then read a ~1–1.5k-token prompt and produce a first clause. On a laptop CPU I expect plain RAG turns near
-**2–3 s**, tool turns **higher** (an extra router call before generation), and clarifying questions (no LLM call)
-**fastest**. The assignment's 2 s target will probably be met only on faster hardware or for question-only turns.
-Mitigations already built: concurrent retrieval + routing, gate (no router call on most turns), clause-level first
-chunk, short voice prompts with a token cap, models kept loaded and warmed, stable prompt prefix for the LLM's cache.
-If your numbers miss, the levers are `ASR_MODEL_ARCH=tiny-streaming`, a smaller `TOP_K`, `ROUTER_NUM_PREDICT`,
-or a faster LLM. Report the breakdown honestly: it shows where the time goes.
 
 ---
 
